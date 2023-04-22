@@ -4,7 +4,7 @@ function formatDateString(date) {
     const year = date.getFullYear().toString(); // Get year as string
   
     // Concatenate day, month, and year with '/' separator
-    const formattedDate = [day, month, year].join('/');
+    const formattedDate = [month, day, year].join('/');
   
     return formattedDate;
 }
