@@ -22,7 +22,8 @@ html{
 
 body{
     --side-padding: 1rem;
-    width: min(100% - 2*var(--side-padding), 800px);
+    width: calc(100% - (2 * var(--side-padding)));
+    max-width: 800px;
     background-color: var(--primary);
     color: var(--text-primary);
     padding: var(--side-padding);
