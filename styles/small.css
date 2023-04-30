@@ -88,7 +88,7 @@ a:hover{
 #home-link{
     margin-left: auto;
 }
-#home-buton{
+#home-back{
     background-color: var(--accent);
     color: var(--text-secondary);
     border: none;
@@ -100,7 +100,7 @@ a:hover{
     border-width: 3px;
     border-style: solid;
 }
-#home-buton:hover{
+#home-back:hover{
     background-color: var(--secondary);
     color: var(--accent);
 }
