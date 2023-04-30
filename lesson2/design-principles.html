@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!-- SITE SPECIFIC INFO -->
+    <title>WDD 230 Design Principles</title>
+    <meta name="description" content="This is the page for the three design principles that I chose to talk about">
+
+    <!-- SOURCES -->
+    <link rel="stylesheet" href="../styles/small.css">
+    <link rel="stylesheet" href="../styles/medium.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/large.css">
+
+    <!-- SCRIPTS -->
+    <script src="../scripts/footer.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Design Principles</h1>
+        <a id="home-link" href="../index.html">
+            <button id="home-buton">
+                <span class="display-none">Go Home</span>
+                <svg id="home-svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"> 
+                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/> 
+                </svg>
+            </button>
+        </a>
+    </header>
+    <main>
+        <div id="principle-container">
+            <div class="principle" id="principle1">
+                <h2>White Space and Clean Design</h2>
+                <h3><a href="www.youtube.com">Youtube</a></h3>
+                <img src="../images/youtube.jpg" alt="An image of Youtube on a mobile device demonstrating the rule of white space.">
+                <p>The rule of White Space and Clean Design is demonstrated above with the icons on the top and the bottom. Notice below, the icons are evenly spaced and minimalistic without being too close to the bottom. Notice the top, the icons aren't touching the sides of the phone and there is plenty of space between the user profile and the search icon.</p>
+            </div>
+            <div class="principle" id="principle2">
+                <h2>Fitt's Law</h2>
+                <h3><a href="www.twitter.com">Twitter</a></h3>
+                <img src="../images/twitter.jpg" alt="An image of the Twitter website on a mobile device demonstrating Fitt's Law.">
+                <p>Notice on Twitter, the two buttons at the bottom, Log in and Sign up, which are very large and close to the bottom, where the user's thumbs likely are. This is a demonstration of Fitt's law, where buttons/targets closer to the mouse pointer, or this case the user's finger, and that are bigger are easier to reach and click/tap on.</p>
+            </div>
+            <div class="principle" id="principle3">
+                <h2>Hick's Law</h2>
+                <h3><a href="www.google.com">Google</a></h3>
+                <img src="../images/google.jpg" alt="An image of the Google website on a mobile device demonstrating Hick's Law.">
+                <p>Google is a beast of a tech developer, they have a lot of different services to choose from, and they've done a great job of consolidating 11 different options in the top right menu, and 30+ options in the top right menu. All of the consolidation greatly reduces the number of decisions a user has to make.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">&copy; <span id="current-year"></span> - WDD 230 | Calvin Olson | BYU-Idaho</div>
+        <small class="footer-bottom">Last Updated: <span id="last-modified"></span></small>
+    </footer>
+</body>
+</html>

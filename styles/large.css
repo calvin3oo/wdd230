@@ -1,18 +1,19 @@
-@media only screen and (min-width: 32.5em){
+@media only screen and (min-width: 100em){
     :root{
-        --font-size: 1.7rem;
+        --font-size: 2rem;
     }
-    hr{
-        border-width: 0.1rem;
+    body{
+        max-width: 1300px;
     }
+
 
     /********************************** Design Principles **********************************/
     #principle-container{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
     #principle3{
-        grid-column: 1 / 3;
+        grid-column: 3 / 4;
     }
 }
