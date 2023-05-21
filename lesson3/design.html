@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <!-- SITE SPECIFIC INFO -->
+    <title>Lone Star Commerce Central</title>
+    <meta name="description" content="The design page for the website plan for the Lone Star Commerce Central, Chamber of Commerce website.">
+
+    <!-- SOURCES -->
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+
+    <!-- SCRIPTS -->
+    <script src="../scripts/footer.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <!-- Navbar Hamburger -->
+        <div id="nav-container-small">
+            <input class="checkbox" type="checkbox"/>
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <!-- Small Navbar Items -->
+            <nav id="nav-items-small">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./design.html">Design</a></li>
+                    <li><a href="./target-audience.html">Target Audience</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Header Logo and Company Name -->
+        <img src="./images/starLogo.svg" alt="Star Logo" id="top-logo">
+        
+        <h1>Lone Star Commerce Central</h1>
+
+        <nav id="nav-container-big">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./design.html">Design</a></li>
+                <li><a href="./target-audience.html">Target Audience</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Design</h2>
+        <div class="left-content">
+            <h3>Font</h3>
+            <p>All fonts are Noto Sans JP</p>
+
+            <h3>Colors</h3>
+            <ul id="design-colors" class="border">
+                <li class="back-1">Background 1 </li>
+                <li class="back-2">Background 2 </li>
+                <li class="secondary">Secondary </li>
+                <li class="accent">Accent </li>
+            </ul>
+
+            <h3>Typography</h3>
+            <table id="typog-table">
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Font Size</th>
+                        <th>Font Weight</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>h1</td>
+                        <td>2.5rem</td>
+                        <td>bold</td>
+                        <td><h1>Example</h1></td>
+                    </tr>
+                    <tr>
+                        <td>h2</td>
+                        <td>2rem</td>
+                        <td>bold</td>
+                        <td><h2>Example</h2></td>
+                    </tr>
+                    <tr>
+                        <td>h3</td>
+                        <td>1.5rem</td>
+                        <td>bold</td>
+                        <td><h3>Example</h3></td>
+                    </tr>
+                    <tr>
+                        <td>p</td>
+                        <td>1rem</td>
+                        <td>normal</td>
+                        <td><p>Example</p></td>
+                    </tr>
+                    <tr>
+                        <td>Navigation</td>
+                        <td>1rem</td>
+                        <td>normal</td>
+                        <td><div class="secondary">Example</div></td>
+                    </tr>
+                    <tr>
+                        <td>Footer</td>
+                        <td>1rem</td>
+                        <td>normal</td>
+                        <td><div class="back-2">Example</div></td>
+                    </tr>
+                    <tr>
+                        <td>Highlight</td>
+                        <td>1rem</td>
+                        <td>normal</td>
+                        <td><div class="accent">Example</div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
+        
+
+    </main>
+    <footer>
+        <div class="footer-top">&copy; <span id="current-year"></span> - WDD 230 | Calvin Olson | BYU-Idaho</div>
+    </footer>
+    <p id="bottom-whitespace"> </p>
+</body>
+</html>
