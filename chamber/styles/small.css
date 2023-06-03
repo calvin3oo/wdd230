@@ -261,6 +261,19 @@ h3{
     margin: 1rem;
     padding: 0;
 }
+h4{
+    margin: 0;
+    padding: 0;
+}
+h5{
+    margin: 0;
+    padding: 0;
+}
+h6{
+    margin: 0;
+    padding: 0;
+}
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -268,8 +281,20 @@ table, th, td {
 }
 .container{
     padding: .5rem;
-    border: 1px dashed var(--text-back);
     border-radius: 1rem;
+    background-color: var(--secondary);
+    color: var(--text-secondary);
+    height: 100%;
+}
+.spotlight.spotlight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: var(--back-secondary);
+    color: var(--text-back);
+    height: 90%;
 }
 hr{
     width: 100%;
@@ -278,6 +303,12 @@ hr{
 }
 .none{
     display: none;
+}
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
 }
 
 
@@ -327,7 +358,23 @@ hr{
 #home-grid{
     display: grid;
     grid-template-columns: 1fr;
-    gap: .5rem;
+    gap: 1.5rem .5rem;
+}
+.join-button {
+    width: 100%;
+    background-color: var(--accent);
+    color: var(--text-accent);
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 1px solid var(--accent);
+}
+.join-button:hover {
+    background-color: var(--text-accent);
+    color: var(--accent);
+    border: 1px solid var(--accent);
 }
 #spotlights{
     display: grid;
@@ -338,4 +385,47 @@ hr{
 }
 #spotlights :nth-child(3){
     display: none;
+}
+#hero{
+    background-image: url("../images/northeastTexas.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    color: rgb(36, 36, 36);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#hero .join-button{
+    width: 50%;
+    margin: 0 1rem 2rem auto;
+
+}
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--back-secondary);
+    color: var(--text-back);
+    padding: 1rem;
+    bottom: 5rem;
+    right: .5rem;
+    width: 50%;
+    border-radius: 1rem;
+    position: fixed;
+    border:rgb(36, 36, 36) solid 1px;
+
+}
+.close-button{
+
+    color: var(--text-accent);
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 1px solid var(--accent);
+    background-color: var(--accent);
 }
