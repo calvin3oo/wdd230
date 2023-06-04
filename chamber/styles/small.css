@@ -1,11 +1,11 @@
 :root{
     --back-primary: rgb(255, 255, 255);
-    --back-secondary: rgb(239, 239, 239);
+    --back-secondary: rgb(232, 232, 232);
     --secondary: rgb(16, 114, 189);
     --accent: rgb(210, 194, 73);
 
     --text-back: rgb(36, 36, 36);
-    --text-secondary: rgb(233, 233, 233);
+    --text-secondary: rgb(255, 255, 255);
     --text-accent: rgb(36, 36, 36);
 
     --font-size: .9rem;
@@ -204,7 +204,7 @@ footer{
     padding: 1rem;
     background-color: var(--back-secondary);
     bottom: 0;
-    font-size: .6rem;
+    font-size: .8rem;
 }
 .footer-top{
     width: 100%;
@@ -408,7 +408,6 @@ hr{
     z-index: 1;
 }
 #hero-temp-img{
-    pointer-events: none;
     position: relative;
     min-width: 110%;
     min-height: 110%;
