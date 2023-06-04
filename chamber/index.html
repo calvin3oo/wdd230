@@ -21,6 +21,7 @@
     <script src="./scripts/footer.js" defer></script>
     <script src="./scripts/header.js" defer></script>
     <script src="./scripts/banner.js" defer></script>
+    <script src="./scripts/windchill.js" defer></script>
 
 </head>
 <body>
@@ -47,7 +48,7 @@
             </div>
 
             <!-- Header Logo -->
-            <img src="./images/starLogo.svg" alt="Star Logo" id="top-logo">
+            <img src="./images/starLogo.webp" alt="Star Logo" id="top-logo">
             
             <!-- Company Name -->
             <h1>Lone Star Commerce Central</h1>
@@ -76,8 +77,14 @@
     
     <main id="home-grid">
         <div id="hero" class="container">
-            <h2>Welcome to Northeast Texas</h2>
+            <h2 id="hero-txt">Welcome to Northeast Texas</h2>
             <button class="join-button">Join Today!</button>
+            <img 
+            srcset="
+            ./images/hero-small.jpg 467w,
+            ./images/hero-medium.jpg 1214w,
+            ./images/hero-large.jpg 2000w"
+            src="./images/hero-small.jpg" alt="Image of a Group of Co-Workers" id="hero-temp-img">
         </div>
         <div id="event" class="container">
             <h3>Annual Northeast Texas Business Expo</h3>
@@ -90,18 +97,21 @@
         <div id="weather" class="container">
             <h3>Weather</h3>
             <br>
-            <h4> Partly Cloudy <span class="float-right">86°F</span></h4>
+            <h4> 
+                Partly Cloudy 
+                <span id="temprature" class="float-right">86°F</span>
+            </h4>
             <hr>
 
             <div class="flex-between">
 
             </div>
             <h4 class="float-left">Wind Speed</h4> 
-            <small class="float-right">5 mph</small>
+            <small id="wind-speed" class="float-right">5 mph</small>
             <hr>
 
             <h4 class="float-left">Wind Chill</h4>
-            <small class="float-right">NA</small>
+            <small id="wind-chill" class="float-right">NA</small>
         </div>
         <div id="news" class="container">
             <h3>News</h3>
@@ -158,7 +168,7 @@
     <footer>
         <div class="footer-top">
             <div class="footer-logo-name-location">
-                <img src="./images/starLogo.svg" alt="Star Logo" id="bottom-logo">
+                <img src="./images/starLogo.webp" alt="Star Logo" id="bottom-logo">
                 <div class="footer-name-location">
                     <h1 class="name">Lone Star Commerce Central</h1>
                     <div class="location">
