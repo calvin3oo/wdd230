@@ -6,6 +6,7 @@ function preloadImage(img){
     if(!src){
         return;
     }
+    img.classList.add("animate");
     img.src = src;
 }
 
