@@ -113,4 +113,8 @@
         grid-column: 1 / 2;
         grid-row: 2 / 3;
     }
+    .discover-imgs{
+        display: flex;
+        flex-direction: column;
+    } 
 }

@@ -68,4 +68,7 @@
     #bottom-logo{
         margin: 0;
     }
+    .discover-img:hover {
+        filter: brightness(85%);
+    }
 }

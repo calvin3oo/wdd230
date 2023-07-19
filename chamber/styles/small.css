@@ -314,6 +314,30 @@ hr{
 
 
 /*************** Colors ***************/
+.margin-1{
+    margin: .5rem;
+}
+.margin-2{
+    margin: 1rem;
+}
+.margin-3{
+    margin: 1.5rem;
+}
+.margin-4{
+    margin: 2rem;
+}
+.padding-1{
+    padding: .5rem;
+}
+.padding-2{
+    padding: 1rem;
+}
+.padding-3{
+    padding: 1.5rem;
+}
+.padding-4{
+    padding: 2rem;
+}
 .back-1{
     background-color: var(--back-primary);
     color: var(--text-back);
@@ -335,6 +359,9 @@ hr{
 }
 
 /*************** W03 Design Page Specifics***************/
+.rounded{
+    border-radius: 1rem;
+}
 .left-content{
     text-align: left;
     padding: 0 1rem;
@@ -449,4 +476,25 @@ hr{
     border-radius: 1rem;
     border: 1px solid var(--secondary);
     background-color: var(--secondary);
+}
+
+/*************** Discover Page Specifics ***************/
+.discover-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.discover-img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease;
+}
+
+.discover-demographics{
+    margin-top: 0;
+    margin-bottom: 1rem;
 }

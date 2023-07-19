@@ -16,11 +16,12 @@
     <link rel="stylesheet" href="./styles/small.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
+    <link rel="stylesheet" href="./styles/lazy.css">
 
     <!-- SCRIPTS -->
     <script src="./scripts/footer.js" defer></script>
     <script src="./scripts/header.js" defer></script>
-    <script src="./scripts/windchill.js" defer></script>
+    <script src="./scripts/lazyLoad.js" defer></script>
 
 </head>
 <body>
@@ -76,12 +77,30 @@
         </div>
     </header>
     
-    <main id="home-grid">
-        <img src="../images/placeholder.jpg" data-src="../images/deer.png" alt="A deer">
-        <img src="../images/placeholder.jpg" data-src="../images/deer.png" alt="A deer">
-        <img src="../images/placeholder.jpg" data-src="../images/deer.png" alt="A deer">
-        <img src="../images/placeholder.jpg" data-src="../images/deer.png" alt="A deer">
-        <img src="../images/placeholder.jpg" data-src="../images/deer.png" alt="A deer">
+    <main>
+        <div class="back-2 rounded padding-2 discover-demographics">
+            <h2>Demographics:</h2>
+            <p>Population: 1,000,000</p>
+            <p>Median Age: 35</p>
+            <p>Median Income: $50,000</p>
+            <p>Median Home Value: $200,000</p>
+            <p>Median Rent: $1,000</p>
+            <p>Median Commute Time: 30 minutes</p>
+            <p>Unemployment Rate: 5%</p>
+        </div>
+
+        <div class="back-2 rounded padding-2">
+            <h2>Places to Go:</h2>
+            <div class="discover-imgs">
+                <img class="discover-img rounded animate" src="./images/placeholder.jpg" data-src="./images/discover/dallas-art-museum.jpg" alt="The Dallas Art Museum">
+                <img class="discover-img rounded animate" src="./images/placeholder.jpg" data-src="./images/discover/dallas-mall.jpg" alt="The Dallas Mall">
+                <img class="discover-img rounded animate" src="./images/placeholder.jpg" data-src="./images/discover/perot-museum.jpg" alt="The Perot Science Museum in Dallas Texas">
+                <img class="discover-img rounded animate" src="./images/placeholder.jpg" data-src="./images/discover/six-flags.jpg" alt="Six flags over texas in Arlington Texas">
+                <img class="discover-img rounded animate" src="./images/placeholder.jpg" data-src="./images/discover/water-gardens.jpg" alt="Dallas concrete water gardens">
+            </div>
+        </div>
+        
+        
     </main>
     <footer>
         <div class="footer-top">
