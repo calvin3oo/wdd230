@@ -1,7 +1,7 @@
 :root{
     --back-primary: rgb(255, 255, 255);
     --back-secondary: rgb(193, 191, 191);
-    --secondary: rgb(16, 114, 189);
+    --secondary: rgb(14, 91, 150);
     --accent: rgb(210, 194, 73);
 
     --text-back: rgb(36, 36, 36);
@@ -243,4 +243,7 @@ table, th, td {
 .personas th, td{
     padding: .5rem;
     margin: 0;
+}
+.none{
+    display: none;
 }

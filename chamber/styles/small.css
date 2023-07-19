@@ -103,6 +103,7 @@ header .hamburger-lines .line {
     height: 40px;
     margin: 0;
     padding: 0;
+    min-width: 64px;
 }
 .favicons{
     display: flex;
@@ -142,7 +143,7 @@ header h1{
     min-width: 160px;
 }
 #nav-items-small{
-    z-index: 1;
+    z-index: 2;
     display: flex;
     position: absolute;
     top: 0;
@@ -435,16 +436,17 @@ hr{
     border-radius: 1rem;
     position: fixed;
     border:rgb(36, 36, 36) solid 1px;
+    z-index: 2;
 
 }
 .close-button{
 
-    color: var(--text-accent);
+    color: var(--text-secondary);
     border: none;
     padding: 12px 20px;
     font-size: 1.5rem;
     cursor: pointer;
     border-radius: 1rem;
-    border: 1px solid var(--accent);
-    background-color: var(--accent);
+    border: 1px solid var(--secondary);
+    background-color: var(--secondary);
 }
