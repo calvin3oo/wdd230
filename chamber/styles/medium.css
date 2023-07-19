@@ -71,4 +71,26 @@
     .discover-img:hover {
         filter: brightness(85%);
     }
+    .join-main{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .benefits{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: min(40%, 300px);
+    }
+    .benefits p{
+        margin: 0;
+    }
+    .benefits ul,
+    .benefits li{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
