@@ -314,6 +314,9 @@ hr{
 
 
 /*************** Colors ***************/
+.margin-0{
+    margin: 0;
+}
 .margin-1{
     margin: .5rem;
 }
@@ -325,6 +328,9 @@ hr{
 }
 .margin-4{
     margin: 2rem;
+}
+.padding-0{
+    padding: 0;
 }
 .padding-1{
     padding: .5rem;
