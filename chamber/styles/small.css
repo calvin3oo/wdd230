@@ -607,3 +607,9 @@ td {
 .margin-auto{
     margin: auto;
 }
+.spotlight-logo{
+  max-width: 150px;
+  margin: auto;
+}
+
+/*************** Contact Me Page Specifics ***************/
