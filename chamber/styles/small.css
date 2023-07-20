@@ -604,3 +604,6 @@ td {
 .grid-table img {
   max-width: 100px;
 }
+.margin-auto{
+    margin: auto;
+}
