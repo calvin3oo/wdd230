@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SITE SPECIFIC INFO -->
+    <title>Bountiful Foods</title>
+    <meta name="description" content="The home page for Bountiful Foods." />
+
+    <!-- SOURCES -->
+    <link rel="stylesheet" href="./styles/small.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+
+    <!-- SCRIPTS -->
+    <script src="./scripts/footer.js" defer></script>
+    <script src="./scripts/header.js" defer></script>
+    <script src="./scripts/windchill.js" defer></script>
+    <script src="./scripts/freshCount.js" defer></script>
+
+  </head>
+  <body>
+    <header>
+      <div class="flex-row">
+        <!-- Navbar Hamburger -->
+        <div id="nav-container-small">
+          <label for="header-check" class="none">invisible</label>
+          <input
+            id="header-check"
+            class="checkbox"
+            type="checkbox"
+            name="check"
+          />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <!-- Small Navbar Items -->
+          <nav id="nav-items-small">
+            <ul>
+              <li><a href="./fresh.html">Fresh!</a></li>
+              <li><a href="./contact.html">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Header Logo -->
+        <a href="./index.html">
+          <img
+            src="./images/logo.png"
+            alt="Bountiful Foods Logo"
+            id="top-logo"
+          />
+        </a>
+
+        <h1>Bountiful Foods</h1>
+
+        <!-- Large Navbar Navbar -->
+        <nav id="nav-container-big">
+          <ul>
+            <li><a href="./fresh.html">Fresh!</a></li>
+            <li><a href="./contact.html">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="favicons"></div>
+      </div>
+      <div class="flex-row">
+        <!-- Current JS Date in Header-->
+        <div id="current-date"></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="secondary rounded padding-2 margin-2">
+        <h1 class="margin-0">Welcome to Freshly Squeezed!</h1>
+        <p>
+          Discover the delight of our fresh fruit drinks, made from the finest
+          produce.
+        </p>
+      </div>
+
+      <div class="container back-2 rounded">
+        <h2>Explore Southern California's Beautiful Coastline</h2>
+        <p>
+          Our headquarters are located near the stunning beaches of Laguna
+          Beach, California. Enjoy the sun, sand, and surf while sipping on our
+          refreshing fruit drinks.
+        </p>
+      </div>
+
+      <div class="back-2 rounded padding-2 margin-2">
+        <p class="margin-0 mb-2">Create Your Own Fruit Drink Mix!</p>
+        <a class="accent rounded get-started" href="fresh.html">Get started now</a>
+      </div> 
+
+      <!-- Weather card for Carlsbad using OpenWeatherMap APIs -->
+      <div class="container">
+        <div id="weather-card">
+          <h2>Current Weather in Carlsbad</h2>
+          <p>Temperature: <span id="temperature">-°F</span></p>
+          <p>Condition: <span id="current-weather-desc">-</span></p>
+          <p>Humidity: <span id="humidity">-%</span></p>
+          <h3 class="text-center">3-Day Forecast</h3>
+          <div id="threeDayForecast"></div>
+        </div>
+      </div>
+
+      <div id="submitted-drinks">
+        <p>
+          Total Specialty Drinks Submitted:
+          <span id="total-submitted">-</span>
+        </p>
+      </div>
+
+      <div class="social-media">
+        <ul class="favicons">
+          <li>
+            <a href="https://www.youtube.com"
+              ><img src="./images/youtube.svg" alt="Youtube Favicon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com"
+              ><img src="./images/linkedIn.svg" alt="LinkedIn Favicon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com"
+              ><img src="./images/instagram.png" alt="Instagram Favicon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-logo-name-location">
+          <img
+            src="./images/logo.png"
+            alt="Bountiful Foods Logo"
+            id="bottom-logo"
+          />
+          <div class="footer-name-location">
+            <h1 class="name">Bountiful Foods</h1>
+            <div class="location">
+              <p>
+                1234 Main Street <br />
+                Anytown, CA 12345
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-email-number">
+          <a href="mailto:BountifulFoods@gmail.com">BountifulFoods@gmail.com</a>
+          <br />
+          <a href="tel:1234567890">(123) 456-7890</a>
+          <br />
+          <a
+            href="https://www.google.com/maps/place/1234+Main+St,+Anytown,+CA+12345/data=!4m2!3m1!1s0x8640d0a2a4b2c6f5:0x2e2c3b5d0b0c6f5f?sa=X&ved=2ahUKEwjJ6Z7X2Z7yAhXJZc0KHZ4aDZIQ8gF6BAgKEAE"
+            >View on Map</a
+          >
+        </div>
+      </div>
+      <hr />
+      <div class="small-footer">
+        &copy; <span class="current-year"></span>
+        Bountiful Foods
+        <br />
+        <b>Calvin Olson</b>
+        <br />
+        WDD 230 Project
+        <br />
+        Last Updated: <span class="last-modified"></span>
+      </div>
+      <div class="large-footer">
+        <small class="footer-bottom">
+          &copy; <span class="current-year"></span> Bountiful Foods | Calvin
+          Olson | WDD 230 Project | Last Updated:
+          <span class="last-modified"></span>
+        </small>
+      </div>
+    </footer>
+  </body>
+</html>
