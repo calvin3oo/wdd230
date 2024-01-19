@@ -118,6 +118,16 @@ li {
     grid-template-columns: 1fr;
     grid-gap: 1rem;
 }
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+.homepage-main-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
 .style-none{
     list-style: none;
 }
@@ -143,6 +153,17 @@ li {
     align-items: center;
     gap: 1rem;
     text-align: center;
+}
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--raisin-black);
+}
+.nav-links a{
+    color: var(--white-smoke);
 }
 .card{
     background-color: var(--white-smoke);
