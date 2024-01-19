@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calvin - WDD 230 - Web Frontend Development Lesson 2</title>
+    <meta name="description" content="This is Calvin Olson's WDD 230 - Web Frontend Development Lesson 2 assignment.">
+    <meta name="author" content="Calvin Olson">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="./styles/vars.css">
+    <link rel="stylesheet" href="./styles/genarics.css">
+    <link rel="stylesheet" href="./styles/base.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+</head>
+<body>
+    <header class="flex-row-center gold py-1">
+        <img class="img-small-size rounded" src="./images/myself-min.jpg" alt="A selfie of Calvin">
+        <h1>Calvin Olson</h1>
+    </header>
+
+    <nav class="pb-1">
+        <ul class="style-none border nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/11?lang=eng&id=p35#p35" target="_blank">John 11:35</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <div class="homepage-main-cards">
+            <section class="card">
+            </section>
+            <section class="card">
+            </section>
+            <section class="card">
+            </section>
+            <!--
+    Notes:
+PARC: Proximity
+    Elements that are related should be placed close to each other to visually group them.
+    amazon
+PARC: Alignment
+    Consistent alignment of elements creates a sense of order and organization in the design.
+    google sheets-slides-docs
+Hicks Law
+    Hick's Law states that the time it takes for a person to make a decision increases with the number of choices available. In web design, this principle suggests that reducing the number of options or presenting choices in a more organized manner can improve user decision-making and navigation efficiency.
+    spotify
+            -->
+        </div>
+    </main>
+
+    <footer class="text-center gold mt-1 p-1">
+        <p>
+            &copy;<span id="current-year"></span> Calvin Olson, US  <img class="img-text-size" src="./images/us-flag.jpg" alt="The US Flag">
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="./scripts/getdates.js"></script>
+</body>
+</html>

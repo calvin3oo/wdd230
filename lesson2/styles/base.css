@@ -1,0 +1,192 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    display: inline-block;
+}
+
+body {
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--white-smoke);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    color: #004c9c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+li {
+    list-style-position: inside;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+.homepage-main-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+.style-none{
+    list-style: none;
+}
+.img-text-size{
+    height: 1rem;
+}
+.img-small-size{
+    height: 10rem;
+}
+.img-medium-size{
+    height: 20rem;
+}
+.flex-row-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.flex-col-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--raisin-black);
+}
+.nav-links a{
+    color: var(--white-smoke);
+}
+.card{
+    background-color: var(--white-smoke);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid var(--raisin-black);
+}
+.card > :first-child{
+    width: 100%;
+    text-align: center;
+    background-color: var(--raisin-black);
+    padding: .5rem;
+    color: var(--white-smoke);
+}
+.gold{
+    background-color: var(--gold-metallic);
+}
+.dark{
+    background-color: var(--raisin-black);
+}
+.rounded{
+    border-radius: 0.5rem;
+}
+.text-center{
+    text-align: center;
+}
