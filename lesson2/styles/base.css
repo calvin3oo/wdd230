@@ -175,8 +175,19 @@ li {
     width: 100%;
     text-align: center;
     background-color: var(--raisin-black);
-    padding: .5rem;
     color: var(--white-smoke);
+}
+.card > *{
+    padding: .5rem;
+}
+.card img{
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    border-radius: .7rem;
+    overflow: none;
 }
 .gold{
     background-color: var(--gold-metallic);
@@ -189,4 +200,7 @@ li {
 }
 .text-center{
     text-align: center;
+}
+.tabbed {
+    margin-left: 20px;
 }
