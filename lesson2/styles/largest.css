@@ -1,0 +1,7 @@
+@media screen and (min-width: 1200px){
+    .laws-main-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+}

@@ -145,6 +145,7 @@ li {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 .flex-col-center{
     display: flex;
@@ -153,6 +154,7 @@ li {
     align-items: center;
     gap: 1rem;
     text-align: center;
+    flex-wrap: wrap;
 }
 .nav-links{
     display: flex;
@@ -187,7 +189,7 @@ li {
     margin-bottom: 1rem;
     border: 1px solid black;
     border-radius: .7rem;
-    overflow: none;
+    overflow: hidden;
 }
 .gold{
     background-color: var(--gold-metallic);
@@ -201,6 +203,8 @@ li {
 .text-center{
     text-align: center;
 }
-.tabbed {
-    margin-left: 20px;
+.laws-main-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
 }
