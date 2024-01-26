@@ -1,4 +1,10 @@
-@media screen and (min-width: 800px){
+@media screen and (min-width: 500px){
+    .mobile-hidden{
+        display: block;
+    }
+    .mobile-show{
+        display: none;
+    }
     .nav-links{
         display: flex;
         flex-direction: row;

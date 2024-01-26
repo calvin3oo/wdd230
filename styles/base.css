@@ -161,6 +161,7 @@ li {
     align-items: center;
     text-align: center;
     background-color: var(--raisin-black);
+    padding: .5rem;
 }
 .nav-links a{
     color: var(--white-smoke);
@@ -189,4 +190,30 @@ li {
 }
 .text-center{
     text-align: center;
+}
+.mobile-hidden{
+    display: none;
+}
+.mobile-show{
+    display: block;
+}
+#hamburger{
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.5rem;
+    right: .7rem;
+}
+#hamburger::before {
+	content: "☰";
+}
+
+#hamburger.open::before {
+	content: "×";
+    color: var(--white-smoke)
+}
+.active::before{
+    content: "📌";
+}
+.active{
+    font-weight: bold;
 }
