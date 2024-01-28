@@ -75,6 +75,25 @@ h4,
 h5,
 h6 {
     display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.17rem;
+}
+h4 {
+    font-size: 1rem;
+}
+h5 {
+    font-size: .83rem;
+}
+h6 {
+    font-size: .67rem;
 }
 
 body {
@@ -145,6 +164,7 @@ li {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 .flex-col-center{
     display: flex;
@@ -171,6 +191,7 @@ li {
     border-radius: 0.5rem;
     overflow: hidden;
     border: 1px solid var(--raisin-black);
+    margin: .5rem 0;
 }
 .card > :first-child{
     width: 100%;
@@ -216,4 +237,52 @@ li {
 }
 .active{
     font-weight: bold;
+}
+.card > *{
+    padding: .5rem;
+}
+.scenario{
+    border: 1px solid var(--raisin-black);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 400px;
+}
+.scenario > p{
+    padding: .5rem;
+}
+.color-schema-table{
+    margin: 1rem auto;
+    border-collapse: collapse;
+    border: 1px solid var(--raisin-black);
+}
+.color-schema-table td, .color-schema-table th{
+    border: 1px solid var(--raisin-black);
+    padding: .5rem;
+}
+.white-smoke{
+    background-color: var(--white-smoke);
+}
+.french-gray{
+    background-color: var(--french-gray);
+}
+.dim-gray{
+    background-color: var(--dim-gray);
+    color: white;
+}
+.rasin-black{
+    background-color: var(--raisin-black);
+    color: white;
+}
+.gold-metallic{
+    background-color: var(--gold-metallic);
+
+}
+.hunyandi-yellow{
+    background-color: var(--hunyadi-yellow);
+}
+.arimo{
+    font-family: 'Arimo', sans-serif;
+}
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
 }

@@ -303,3 +303,6 @@
 .display-none{
     display: none;
 }
+.m-center{
+    margin: 0 auto;
+}
