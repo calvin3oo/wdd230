@@ -303,3 +303,9 @@
 .display-none{
     display: none;
 }
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}

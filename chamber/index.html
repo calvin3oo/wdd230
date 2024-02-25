@@ -34,11 +34,20 @@
     <!-- JavaScript -->
     <script defer src="./scripts/getdates.js"></script>
     <script defer src="./scripts/menu.js"></script>
+    <script defer src="./scripts/darkmode.js"></script>
 
 </head>
 <body>
     <header class="flex-row-center gold py-1">
         <h1>Calvin Olson</h1>
+
+        <h2 id="dark-mode-container">
+            <span id="modeIcon">🌕</span>
+            <label class="switch">
+                <input type="checkbox" id="modeToggle">
+                <span class="slider round"></span>
+            </label>
+        </h2>
     </header>
 
     <nav class="pb-1">
