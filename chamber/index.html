@@ -22,19 +22,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" href="./images/mountain.svg">
+    <link rel="icon" href="./images/mountain.webp">
 
     <!-- Social Media -->
     <meta property="og:title" content="Teton Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Teton Chamber of Commerce for Northeastern Idaho Business.">
-    <meta property="og:image" content="/images/mountain.svg">
+    <meta property="og:image" content="/images/mountain.webp">
     <meta property="og:url" content="https://calvin3oo.github.io/wdd230/chamber/">
 
     <!-- JavaScript -->
     <script defer src="./scripts/getdates.js"></script>
     <script defer src="./scripts/menu.js"></script>
     <script defer src="./scripts/darkmode.js"></script>
+    <script defer src="./scripts/windchill.js"></script>
 
 </head>
 <body>
@@ -64,7 +65,11 @@
     <main>
         <h2>Teton Chamber of Commerce</h2>
         <div class="hero">
-            <img src="./images/hero.jpg" alt="A mountain range">
+            <!-- <img src="./images/hero.jpg" alt="A mountain range"> -->
+            <img src="./images/hero.jpg" alt="A mountain range" 
+            srcset="./images/temp-hero-small.jpg 500w,
+                ./images/temp-hero-medium.jpg 1200w,
+                ./images/temp-hero-large.jpg 1920w">
             <a href="./join.html"><button id="hero-join-button">Join Today!</button></a>
         </div>
 
@@ -80,7 +85,9 @@
             <h3>Weather</h3>
             <div class="card m-1">
                 <h4>Current Weather</h4>
-                <p>There is no current weather at this time.</p>
+                <p>Temp: <span id="temp"></span></p>
+                <p>Wind Speed: <span id="windSpeed"></span></p>
+                <p>Wind Chill: <span id="windChill"></span></p>
             </div>
         </div>
 
