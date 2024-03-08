@@ -240,13 +240,17 @@ li {
 .hero{
     border-radius: 1em;
     overflow: hidden;
-    margin: 0;
     margin-top: 1rem;
     position: relative;
+    max-width: 70rem;
+    max-height: 30rem;
+    margin: 1em auto;
 }
 .hero img{
     width: 100%;
     height: 100%;
+    max-height: 40rem;
+    object-fit: cover;
 }
 #hero-label{
     position: absolute;
