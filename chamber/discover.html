@@ -35,7 +35,6 @@
     <script defer src="./scripts/getdates.js"></script>
     <script defer src="./scripts/menu.js"></script>
     <script defer src="./scripts/darkmode.js"></script>
-    <script defer src="./scripts/windchill.js"></script>
 
 </head>
 <body>
@@ -63,50 +62,33 @@
     </nav>
 
     <main>
-        <h2>Teton Chamber of Commerce</h2>
-        <div class="hero">
-            <!-- <img src="./images/hero.jpg" alt="A mountain range"> -->
-            <img src="./images/hero.jpg" alt="A mountain range" 
-            srcset="./images/temp-hero-small.jpg 500w,
-                ./images/temp-hero-medium.jpg 1200w,
-                ./images/temp-hero-large.jpg 1920w">
-            <a href="./join.html"><button id="hero-join-button">Join Today!</button></a>
-        </div>
+        <div class="lazy-grid-cols">
+            <div class="lazy-content">
+                <div class="card">
+                    <h2>Heading 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam doloribus corporis eius ipsam labore sit dignissimos? Reprehenderit possimus maiores odio, doloribus totam numquam nihil in facilis quos aliquam quam temporibus.</p>
+                </div>
+                <div class="card">
+                    <h2>Heading 2</h2>
+                    <img src="./images/lazy/placeholder.webp" alt="Just a placeholder image">
+                </div>
+                <div class="card">
+                    <h2>Heading 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat iure eaque voluptatibus accusamus, sequi modi minima ratione ducimus iste, tempora ipsum perspiciatis saepe temporibus quos repudiandae qui quidem ea est.
+                    Amet vitae minima autem qui et dicta iusto repellendus alias maxime aliquam cumque sed suscipit eligendi provident illo possimus libero aliquid quis, veritatis recusandae nam. Minima totam quas fugiat nam!
+                    Veniam, dicta dolorum voluptates voluptatum sunt quasi provident porro numquam? Repellendus, quibusdam quaerat. Sit sint provident molestiae vero in nostrum necessitatibus labore asperiores, modi harum aut aliquid ad debitis. Totam?</p>
+                </div>
+            </div>
+            <div class="lazy-sidebar">
+                <img src="./images/lazy/img1.jpg" loading="lazy" alt="An image of an a fox">
+                <img src="./images/lazy/img2.jpg" loading="lazy" alt="An image of an a deer">
+                <img src="./images/lazy/img3.jpg" loading="lazy" alt="An image of an a cheetah">
+                <img src="./images/lazy/img4.webp" loading="lazy" alt="An image of an a dog">
+                <img src="./images/lazy/img5.jpg" loading="lazy" alt="An image of an a cat">
+                <img src="./images/lazy/img6.jpg" loading="lazy" alt="An image of an a elephant">
+            </div>
 
-        <div class="card">
-            <h3>Current Events</h3>
-            <div class="card m-1">
-                <h4>Upcoming Events</h4>
-                <p>There are no upcoming events at this time.</p>
-            </div>
         </div>
-
-        <div class="card">
-            <h3>Weather</h3>
-            <div class="card m-1">
-                <h4>Current Weather</h4>
-                <p>Temp: <span id="temp"></span></p>
-                <p>Wind Speed: <span id="windSpeed"></span></p>
-                <p>Wind Chill: <span id="windChill"></span></p>
-            </div>
-        </div>
-
-        <div class="card">
-            <h3>Local Businesses</h3>
-            <div class="card m-1">
-                <h4>Local Business Directory</h4>
-                <p>There are no local businesses at this time.</p>
-            </div>
-            <div class="card m-1">
-                <h4>Local Business Directory</h4>
-                <p>There are no local businesses at this time.</p>
-            </div>
-            <div class="card m-1">
-                <h4>Local Business Directory</h4>
-                <p>There are no local businesses at this time.</p>
-            </div>
-        </div>
-
     </main>
 
     <footer class="text-center gold mt-1 p-1">

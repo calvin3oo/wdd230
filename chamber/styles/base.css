@@ -309,3 +309,15 @@ input:checked + .slider:before {
     gap: 1rem;
     align-items: center;
 }
+.lazy-grid-cols{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    width: 100%;
+}
+img{
+    max-width: 100%;
+}
+.lazy-content p{
+    margin: 1rem;
+}
