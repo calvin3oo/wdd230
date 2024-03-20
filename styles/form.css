@@ -1,0 +1,31 @@
+.main-form{
+  display: flex;
+  margin: 1em auto 0 auto;
+  max-width: 500px;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--raisin-black);
+  text-align: center;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+.main-form button[type="submit"]{
+    padding: 10px 20px;
+    background-color: var(--hunyadi-yellow);
+    color: var(--raisin-black);
+    border: 2px solid var(--hunyadi-yellow);
+    cursor: pointer;
+    border-radius: 1rem;
+    min-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.main-form button[type="submit"]:hover{
+  background-color: var(--raisin-black);
+  color: var(--hunyadi-yellow);
+}

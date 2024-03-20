@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calvin - WDD 230 - Web Frontend Development</title>
+    <title>Home Page Form Build</title>
     <meta
       name="description"
       content="This is Calvin Olson's WDD 230 - Web Frontend Development course assignment portal. This will link out to the other projects this semester."
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./styles/vars.css" />
     <link rel="stylesheet" href="./styles/genarics.css" />
     <link rel="stylesheet" href="./styles/larger.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -62,38 +63,18 @@
     </nav>
 
     <main>
-      <div class="hero">
-        <img
-          class="w-100"
-          src="./images/IFTemple.webp"
-          srcset="./images/IFTemple.webp 1280w, ./images/IFTemple-min.webp 400w"
-          sizes="(max-width: 768px) 100vw, 50vw"
-          alt="The Idaho Falls Temple"
-        />
-        <h2 id="hero-label">Idaho Falls Temple</h2>
-      </div>
-      <h2>WDD 230: Web Frontend Development</h2>
-      <div class="homepage-main-cards">
-        <section class="card">
-          <h3>Learning Activities</h3>
-          <ul id="links" class="style-none p-1"></ul>
-        </section>
-        <section class="card">
-          <h3>Information</h3>
-          <div class="p-1">
-            <div class="item">Num of Visits: <span id="num-visits"></span></div>
-            <div class="item">Weather: <span id="weather"></span></div>
+      <div class="container">
+       
+        <div class="mt-1 card">
+          <h2>Thanks for joining!</h2>
+          <div class="m-1 flex-row-center">
+            <a href="./index.html">Home</a>
+            <span> | </span>
+            <a href="./form.html">Submit another Member</a>
           </div>
-        </section>
+          
+        </div>
       </div>
-      <iframe
-        class="w-100 mt-1"
-        height="500"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23025.94809271927!2d-111.8088252736763!3d43.83004859230509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1706246723185!5m2!1sen!2sus"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
     </main>
 
     <footer class="text-center gold mt-1 p-1">
@@ -110,7 +91,6 @@
 
     <script src="./scripts/getdates.js"></script>
     <script src="./scripts/menu.js"></script>
-    <script src="./scripts/information.js"></script>
-    <script src="./scripts/getLinks.js"></script>
+    <script src="./scripts/form.js"></script>
   </body>
 </html>
