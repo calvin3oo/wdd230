@@ -67,6 +67,15 @@
             ]
         },
         {
+            "lesson": "08",
+            "links": [
+            {
+                "url":"form.html",
+                "title":"Form Page Build"
+            }
+            ]
+        },
+        {
             "lesson": "09",
             "links": [
             {
