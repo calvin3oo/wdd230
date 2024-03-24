@@ -85,6 +85,10 @@
             {
                 "url":"index.html",
                 "title":"JSON Menu"
+            },
+            {
+                "url":"chamber/directory.html",
+                "title":"The Directory Page"
             }
             ]
         }

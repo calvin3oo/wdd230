@@ -321,3 +321,36 @@ img{
 .lazy-content p{
     margin: 1rem;
 }
+.grid-view{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .3rem;
+}
+#members-container img{
+    max-height: 10rem;
+    border-radius: 50%;
+}
+.member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    text-align: center;
+    margin: 0;
+}
+#members-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#viewToggle{
+    color: var(--raisin-black);
+    background-color: var(--gold-metallic);
+    border-radius: 1rem;
+    padding: .5rem;
+    cursor: pointer;
+    margin: 1rem auto;
+}
+#viewToggle:hover{
+    color: var(--gold-metallic);
+    background-color: var(--raisin-black);
+}
