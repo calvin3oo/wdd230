@@ -264,3 +264,7 @@ li {
     border-radius: .5rem;
     padding: .5rem;
 }
+
+.weather-icon{
+    transform: translate(0, 25%);
+}
