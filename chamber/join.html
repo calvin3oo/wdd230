@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teton Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="This is the main homepage for the Teton Chamber of Commerce."
+    />
+    <meta name="author" content="Calvin Olson" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/vars.css" />
+    <link rel="stylesheet" href="./styles/genarics.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo&family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/mountain.webp" />
+
+    <!-- Social Media -->
+    <meta property="og:title" content="Teton Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Teton Chamber of Commerce for Northeastern Idaho Business."
+    />
+    <meta property="og:image" content="/images/mountain.webp" />
+    <meta
+      property="og:url"
+      content="https://calvin3oo.github.io/wdd230/chamber/"
+    />
+
+    <!-- JavaScript -->
+    <script defer src="./scripts/getdates.js"></script>
+    <script defer src="./scripts/menu.js"></script>
+    <script defer src="./scripts/darkmode.js"></script>
+  </head>
+  <body>
+    <header class="flex-row-center gold py-1">
+      <h1>Teton Chamber of Commerce</h1>
+
+      <h2 id="dark-mode-container">
+        <span id="modeIcon">🌕</span>
+        <label class="switch">
+          <input type="checkbox" id="modeToggle" />
+          <span hidden class="slider round"></span>
+        </label>
+      </h2>
+    </header>
+
+    <nav class="pb-1">
+      <div id="hamburger" class="mobile-show"></div>
+      <ul id="menu" class="style-none mobile-hidden nav-links">
+        <!-- filled in from menu.js -->
+      </ul>
+    </nav>
+
+    <main>
+      <div class="flex-row-center flex-wrap">
+        <div class="main-form-container card">
+          <h2>Join the Teton Chamber of Commerce</h2>
+          <form class="main-form" action="thankyou.html" method="get">
+            <div class="form-group">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+            <div class="form-group">
+              <label for="position">Title/Position:</label>
+              <input
+                type="text"
+                id="position"
+                name="position"
+                required
+                pattern="[A-Za-z\s-]{7,}"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="example@example.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Mobile Phone:</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="businessName">Business/Organization Name:</label>
+              <input
+                type="text"
+                id="businessName"
+                name="businessName"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="membershipLevel">Membership Level:</label>
+              <select id="membershipLevel" name="membershipLevel">
+                <option value="NP Membership">NP Membership</option>
+                <option value="Bronze Membership">Bronze Membership</option>
+                <option value="Silver Membership">Silver Membership</option>
+                <option value="Gold Membership">Gold Membership</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="description"
+                >Business/Organization Description:</label
+              >
+              <textarea id="description" name="description"></textarea>
+            </div>
+            <input
+              type="hidden"
+              id="formLoadTime"
+              name="formLoadTime"
+              value=""
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="card membership-information-container">
+          <h2>Membership Level Information</h2>
+          <div class="container">
+            <div class="membership-level">
+              <h3>NP Membership</h3>
+              <p>Cost: $100/year</p>
+              <ul>
+                <li>Access to member-only events</li>
+                <li>Discounts on chamber-sponsored events</li>
+                <li>Listing in the chamber directory</li>
+              </ul>
+            </div>
+            <div class="membership-level">
+              <h3>Bronze Membership</h3>
+              <p>Cost: $250/year</p>
+              <ul>
+                <li>All benefits of NP Membership</li>
+                <li>Featured listing on the chamber website</li>
+                <li>Opportunity to host chamber events</li>
+              </ul>
+            </div>
+            <div class="membership-level">
+              <h3>Silver Membership</h3>
+              <p>Cost: $500/year</p>
+              <ul>
+                <li>All benefits of Bronze Membership</li>
+                <li>Priority access to chamber resources</li>
+                <li>Advertisement in chamber newsletter</li>
+              </ul>
+            </div>
+            <div class="membership-level">
+              <h3>Gold Membership</h3>
+              <p>Cost: $1000/year</p>
+              <ul>
+                <li>All benefits of Silver Membership</li>
+                <li>Exclusive sponsorship opportunities</li>
+                <li>Featured spot on the chamber home page</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center gold mt-1 p-1">
+      <p>
+        &copy;<span id="current-year"></span> Calvin Olson, US
+        <img
+          class="img-text-size"
+          src="./images/us-flag.jpg"
+          alt="The US Flag"
+        />
+      </p>
+      <p>This is for WDD 230 at BYU-Idaho.</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
