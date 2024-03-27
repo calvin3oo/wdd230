@@ -98,6 +98,10 @@
             {
                 "url":"index.html",
                 "title":"Weather API"
+            },
+            {
+                "url":"chamber/index.html",
+                "title":"Chamber Home Weather"
             }
             ]
         }

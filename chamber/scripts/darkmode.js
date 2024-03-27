@@ -24,11 +24,15 @@ function toggleRootVars(darkMode) {
     root.style.setProperty("--french-gray", "#6d6a75ff");
     root.style.setProperty("--dim-gray", "#bfbdc1ff");
     root.style.setProperty("--raisin-black", "#F5F5F5");
+    root.style.setProperty("--gold-metallic", "#534a00");
+    root.style.setProperty("--hunyadi-yellow", "#deb841ff");
   } else {
     root.style.setProperty("--white-smoke", "#F5F5F5");
     root.style.setProperty("--french-gray", "#bfbdc1ff");
     root.style.setProperty("--dim-gray", "#6d6a75ff");
     root.style.setProperty("--raisin-black", "#37323eff");
+    root.style.setProperty("--gold-metallic", "#deb841ff");
+    root.style.setProperty("--hunyadi-yellow", "#534a00");
   }
 }
 

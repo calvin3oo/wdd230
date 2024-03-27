@@ -10,4 +10,4 @@ document.getElementById(
 
 // Dynamically populate current date in the form if the element exists
 const currentDateElement = document.getElementById("formLoadTime");
-if (currentDateElement) currentDateElement.value = new Date().now();
+if (currentDateElement) currentDateElement.value = Date.now();

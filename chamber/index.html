@@ -1,115 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teton Chamber of Commerce</title>
-    <meta name="description" content="This is the main homepage for the Teton Chamber of Commerce.">
-    <meta name="author" content="Calvin Olson">
+    <meta
+      name="description"
+      content="This is the main homepage for the Teton Chamber of Commerce."
+    />
+    <meta name="author" content="Calvin Olson" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/vars.css">
-    <link rel="stylesheet" href="./styles/genarics.css">
-    <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/medium.css">
-    <link rel="stylesheet" href="./styles/larger.css">
-    
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/vars.css" />
+    <link rel="stylesheet" href="./styles/genarics.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
 
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo&family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Favicon -->
-    <link rel="icon" href="./images/mountain.webp">
+    <link rel="icon" href="./images/mountain.webp" />
 
     <!-- Social Media -->
-    <meta property="og:title" content="Teton Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="Teton Chamber of Commerce for Northeastern Idaho Business.">
-    <meta property="og:image" content="/images/mountain.webp">
-    <meta property="og:url" content="https://calvin3oo.github.io/wdd230/chamber/">
+    <meta property="og:title" content="Teton Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Teton Chamber of Commerce for Northeastern Idaho Business."
+    />
+    <meta property="og:image" content="/images/mountain.webp" />
+    <meta
+      property="og:url"
+      content="https://calvin3oo.github.io/wdd230/chamber/"
+    />
 
     <!-- JavaScript -->
     <script defer src="./scripts/getdates.js"></script>
     <script defer src="./scripts/menu.js"></script>
     <script defer src="./scripts/darkmode.js"></script>
-    <script defer src="./scripts/windchill.js"></script>
+    <script defer src="./scripts/weather.js"></script>
+    <script defer src="./scripts/banner.js"></script>
+  </head>
+  <body>
+    <header class="gold py-1">
+      <h1 class="main-title">Teton Chamber of Commerce</h1>
 
-</head>
-<body>
-    <header class="flex-row-center gold py-1">
-        <h1>Teton Chamber of Commerce</h1>
+      <h2 id="dark-mode-container">
+        <span id="modeIcon">🌕</span>
+        <label class="switch">
+          <input type="checkbox" id="modeToggle" />
+          <span hidden class="slider round"></span>
 
-        <h2 id="dark-mode-container">
-            <span id="modeIcon">🌕</span>
-            <label class="switch">
-                <input type="checkbox" id="modeToggle">
-                <span hidden class="slider round"></span>
-            </label>
-        </h2>
+          <!-- invisible character to get past wave error-->
+          <span hidden>🌑</span>
+        </label>
+      </h2>
     </header>
 
     <nav class="pb-1">
-        <div id="hamburger" class="mobile-show"></div>
-        <ul id="menu" class="style-none mobile-hidden nav-links">
-            <!-- filled in from menu.js -->
-        </ul>
+      <div id="hamburger" class="mobile-show"></div>
+      <ul id="menu" class="style-none mobile-hidden nav-links">
+        <!-- filled in from menu.js -->
+      </ul>
+
+      <div id="banner-container" hidden>
+        <div
+          id="banner-close"
+        >
+          ❌
+        </div>
+        <p id="banner-text"></p>
+      </div>
     </nav>
 
     <main>
-        <h2>Teton Chamber of Commerce</h2>
-        <div class="hero">
-            <img src="./images/hero.jpg" alt="A mountain range">
-            <a href="./join.html">
-                <button id="hero-join-button">Join Today!</button>
-            </a>
-        </div>
+      <h2>Teton Chamber of Commerce</h2>
+      <div class="hero">
+        <img src="./images/hero.jpg" alt="A mountain range" />
+        <a href="./join.html">
+          <button id="hero-join-button">Join Today!</button>
+        </a>
+      </div>
 
-        <div class="card">
-            <h3>Current Events</h3>
-            <div class="card m-1">
-                <h4>Upcoming Events</h4>
-                <p>There are no upcoming events at this time.</p>
-            </div>
+      <div class="card">
+        <h3>Current Events</h3>
+        <div class="card m-1">
+          <h4>Upcoming Events</h4>
+          <p>There are no upcoming events at this time.</p>
         </div>
+      </div>
 
-        <div class="card">
-            <h3>Weather</h3>
-            <div class="card m-1">
-                <h4>Current Weather</h4>
-                <img id="weatherIcon"></img>
-                <p>Temp: <span id="temp"></span></p>
-                <p>Wind Speed: <span id="windSpeed"></span></p>
-                <p>Wind Chill: <span id="windChill"></span></p>
+      <div class="card">
+        <h3>Weather</h3>
+        <div class="container text-center">
+          <div class="container">
+            <h4>Current Weather</h4>
+            <p><span id="temp"></span> <span id="weatherDesc"></span></p>
+          </div>
+          <div class="container">
+            <h4>3-Day Forecast</h4>
+            <div class="flex-row-center" id="threeDayForecast">
+              <!-- filled in by JavaScript -->
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="card">
-            <h3>Local Businesses</h3>
-            <div class="card m-1">
-                <h4>Local Business Directory</h4>
-                <p>There are no local businesses at this time.</p>
-            </div>
-            <div class="card m-1">
-                <h4>Local Business Directory</h4>
-                <p>There are no local businesses at this time.</p>
-            </div>
-            <div class="card m-1">
-                <h4>Local Business Directory</h4>
-                <p>There are no local businesses at this time.</p>
-            </div>
+      <div class="card">
+        <h3>Local Businesses</h3>
+        <div class="card m-1">
+          <h4>Local Business Directory</h4>
+          <p>There are no local businesses at this time.</p>
         </div>
-
+        <div class="card m-1">
+          <h4>Local Business Directory</h4>
+          <p>There are no local businesses at this time.</p>
+        </div>
+        <div class="card m-1">
+          <h4>Local Business Directory</h4>
+          <p>There are no local businesses at this time.</p>
+        </div>
+      </div>
     </main>
 
     <footer class="text-center gold mt-1 p-1">
-        <p>
-            &copy;<span id="current-year"></span> Calvin Olson, US  <img class="img-text-size" src="./images/us-flag.jpg" alt="The US Flag">
-        </p>
-        <p> This is for WDD 230 at BYU-Idaho.</p>
-        <p id="lastModified"></p>
+      <p>
+        &copy;<span id="current-year"></span> Calvin Olson, US
+        <img
+          class="img-text-size"
+          src="./images/us-flag.jpg"
+          alt="The US Flag"
+        />
+      </p>
+      <p>This is for WDD 230 at BYU-Idaho.</p>
+      <p id="lastModified"></p>
     </footer>
-</body>
+  </body>
 </html>
