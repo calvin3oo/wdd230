@@ -26,6 +26,7 @@ function toggleRootVars(darkMode) {
     root.style.setProperty("--raisin-black", "#F5F5F5");
     root.style.setProperty("--gold-metallic", "#534a00");
     root.style.setProperty("--hunyadi-yellow", "#deb841ff");
+    root.style.setProperty("--link-color", "#90c4ff");
   } else {
     root.style.setProperty("--white-smoke", "#F5F5F5");
     root.style.setProperty("--french-gray", "#bfbdc1ff");
@@ -33,6 +34,7 @@ function toggleRootVars(darkMode) {
     root.style.setProperty("--raisin-black", "#37323eff");
     root.style.setProperty("--gold-metallic", "#deb841ff");
     root.style.setProperty("--hunyadi-yellow", "#534a00");
+    root.style.setProperty("--link-color", "#004c9c");
   }
 }
 

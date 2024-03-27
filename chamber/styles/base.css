@@ -116,7 +116,7 @@ body {
 }
 
 a {
-  color: #004c9c;
+  color: var(--link-color);
   text-decoration: none;
 }
 
@@ -199,6 +199,10 @@ li {
   background-color: var(--raisin-black);
   padding: 0.5rem;
   color: var(--white-smoke);
+}
+.card.member > :not(:first-child) {
+  margin: 0.5rem;
+  max-width: 400px;
 }
 .gold {
   background-color: var(--gold-metallic);
@@ -329,7 +333,7 @@ img {
 .lazy-sidebar {
   max-width: 400px;
 }
-.lazy-sidebar img:hover{
+.lazy-sidebar img:hover {
   transform: scale(1.01);
 }
 .grid-view {
@@ -337,7 +341,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 0.3rem;
 }
-#members-container img {
+.member img {
   max-height: 10rem;
   border-radius: 50%;
 }
@@ -395,9 +399,9 @@ img {
 }
 .main-form button[type="submit"] {
   padding: 10px 20px;
-  background-color: var(--hunyadi-yellow);
+  background-color: var(--gold-metallic);
   color: var(--raisin-black);
-  border: 2px solid var(--hunyadi-yellow);
+  border: 2px solid var(--gold-metallic);
   cursor: pointer;
   border-radius: 1rem;
   min-width: 200px;
@@ -406,7 +410,7 @@ img {
 }
 .main-form button[type="submit"]:hover {
   background-color: var(--raisin-black);
-  color: var(--hunyadi-yellow);
+  color: var(--gold-metallic);
 }
 
 .container {
@@ -446,4 +450,27 @@ img {
   float: right;
   width: 20px;
   display: block;
+}
+#hero-join-link button {
+  background-color: var(--gold-metallic);
+  color: var(--raisin-black);
+  border: 2px solid var(--gold-metallic);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+#hero-join-link button:hover {
+  background-color: var(--raisin-black);
+  color: var(--gold-metallic);
+}
+#hero-join-link {
+  position: relative;
+  display: inline-block;
+  top: -2.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+}
+.hero {
+  margin-bottom: -3rem;
 }

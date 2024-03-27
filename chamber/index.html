@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teton Chamber of Commerce</title>
+    <title>Teton Chamber of Commerce Home</title>
     <meta
       name="description"
-      content="This is the main homepage for the Teton Chamber of Commerce."
+      content="This is the main homepage for the Teton Chamber of Commerce website."
     />
     <meta name="author" content="Calvin Olson" />
 
@@ -48,6 +48,7 @@
     <script defer src="./scripts/darkmode.js"></script>
     <script defer src="./scripts/weather.js"></script>
     <script defer src="./scripts/banner.js"></script>
+    <script defer src="./scripts/spotlight.js"></script>
   </head>
   <body>
     <header class="gold py-1">
@@ -72,11 +73,7 @@
       </ul>
 
       <div id="banner-container" hidden>
-        <div
-          id="banner-close"
-        >
-          ❌
-        </div>
+        <div id="banner-close">❌</div>
         <p id="banner-text"></p>
       </div>
     </nav>
@@ -85,16 +82,20 @@
       <h2>Teton Chamber of Commerce</h2>
       <div class="hero">
         <img src="./images/hero.jpg" alt="A mountain range" />
-        <a href="./join.html">
-          <button id="hero-join-button">Join Today!</button>
+        <a id="hero-join-link" href="./join.html">
+          <button>Join Today!</button>
         </a>
       </div>
 
       <div class="card">
         <h3>Current Events</h3>
-        <div class="card m-1">
-          <h4>Upcoming Events</h4>
-          <p>There are no upcoming events at this time.</p>
+        <div class="m-2">
+          <h4>Teton Idaho Annual Summer Festival</h4>
+          <p>
+            Join us for the Teton Idaho Annual Summer Festival on July 10th,
+            2022! Enjoy live music, local food vendors, and fun activities for
+            the whole family. Don't miss out on this exciting community event!
+          </p>
         </div>
       </div>
 
@@ -116,18 +117,10 @@
 
       <div class="card">
         <h3>Local Businesses</h3>
-        <div class="card m-1">
-          <h4>Local Business Directory</h4>
-          <p>There are no local businesses at this time.</p>
-        </div>
-        <div class="card m-1">
-          <h4>Local Business Directory</h4>
-          <p>There are no local businesses at this time.</p>
-        </div>
-        <div class="card m-1">
-          <h4>Local Business Directory</h4>
-          <p>There are no local businesses at this time.</p>
-        </div>
+        <div
+          class="container flex-row-center flex-wrap"
+          id="localBusinessesContainer"
+        ></div>
       </div>
     </main>
 
