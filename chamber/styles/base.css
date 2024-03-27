@@ -311,10 +311,11 @@ input:checked + .slider:before {
 }
 .lazy-grid-cols {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 1rem;
   width: 100%;
   margin-top: 1rem;
+  margin: 1rem auto 0 auto;
 }
 img {
   max-width: 100%;
@@ -324,6 +325,12 @@ img {
 }
 .lazy-sidebar img {
   object-fit: cover;
+}
+.lazy-sidebar {
+  max-width: 400px;
+}
+.lazy-sidebar img:hover{
+  transform: scale(1.01);
 }
 .grid-view {
   display: grid;

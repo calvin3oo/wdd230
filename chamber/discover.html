@@ -46,6 +46,7 @@
     <script defer src="./scripts/getdates.js"></script>
     <script defer src="./scripts/menu.js"></script>
     <script defer src="./scripts/darkmode.js"></script>
+    <script defer src="./scripts/welcome.js"></script>
   </head>
   <body>
     <header class="gold py-1">
@@ -56,6 +57,9 @@
         <label class="switch">
           <input type="checkbox" id="modeToggle" />
           <span hidden class="slider round"></span>
+
+          <!-- invisible character to get past wave error-->
+          <span hidden>🌑</span>
         </label>
       </h2>
     </header>
@@ -70,96 +74,89 @@
     <main>
       <div class="lazy-grid-cols">
         <div class="lazy-content">
+          <div class="container">
+            <h3 id="welcome-message"></h3>
+          </div>
           <div class="card">
-            <h2>Heading 1</h2>
+            <h2>About Teton, ID</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              doloribus corporis eius ipsam labore sit dignissimos?
-              Reprehenderit possimus maiores odio, doloribus totam numquam nihil
-              in facilis quos aliquam quam temporibus.
+              Teton, Idaho is a charming town nestled in the Teton Valley. With
+              its breathtaking views of the majestic Tetons, it's a paradise for
+              outdoor enthusiasts. Whether you enjoy hiking, skiing, or simply
+              taking in the natural beauty, Teton has something for everyone.
             </p>
           </div>
           <div class="card">
-            <h2>Heading 2</h2>
-            <img
-              src="./images/lazy/placeholder.webp"
-              alt="Just a placeholder image"
-            />
+            <h2>Local Attractions</h2>
+            <p>
+              Teton, Idaho offers a wide range of attractions for visitors to
+              explore. From the stunning Teton Valley sign to the historic
+              Haunted Mill, there's no shortage of interesting sights to see.
+              Whether you're a nature lover or a history buff, you'll find
+              something to captivate your interest in Teton.
+            </p>
           </div>
           <div class="card">
-            <h2>Heading 3</h2>
+            <h2>Local Business</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
-              iure eaque voluptatibus accusamus, sequi modi minima ratione
-              ducimus iste, tempora ipsum perspiciatis saepe temporibus quos
-              repudiandae qui quidem ea est. Amet vitae minima autem qui et
-              dicta iusto repellendus alias maxime aliquam cumque sed suscipit
-              eligendi provident illo possimus libero aliquid quis, veritatis
-              recusandae nam. Minima totam quas fugiat nam! Veniam, dicta
-              dolorum voluptates voluptatum sunt quasi provident porro numquam?
-              Repellendus, quibusdam quaerat. Sit sint provident molestiae vero
-              in nostrum necessitatibus labore asperiores, modi harum aut
-              aliquid ad debitis. Totam?
+              The Teton Chamber of Commerce welcomes you to explore all that
+              Teton, Idaho has to offer. From its vibrant local businesses to
+              its rich cultural heritage, there's always something exciting
+              happening in Teton. Whether you're visiting for a weekend getaway
+              or planning to make Teton your home, we're here to help you make
+              the most of your experience.
             </p>
           </div>
         </div>
         <div class="lazy-sidebar">
           <img
             loading="lazy"
-            src="./images/lazy/img1.jpg"
-            alt="An image of an a fox"
-            width="500"
+            src="./images/discover/discover-1.jpg"
+            alt="Majestic Tetons"
+            width="400"
             height="300"
           />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
-            quibusdam animi non blanditiis quaerat magnam officiis,
-            reprehenderit officia explicabo! Blanditiis totam asperiores
-            voluptatum atque corrupti accusantium repellat ratione, et numquam
-            reiciendis? Commodi officiis, amet itaque libero obcaecati at odio
-            cumque quaerat qui minus tempore similique, sit perferendis.
-            Explicabo velit optio laborum tempore quisquam laudantium fuga,
-            veniam ipsa, natus provident in molestias temporibus porro dolor cum
-            modi delectus veritatis numquam rem illo a est fugit et amet.
-            Laborum impedit, assumenda nam unde nihil ab modi minus adipisci
-            reprehenderit debitis delectus similique expedita rem deleniti,
-            tempore officiis? Tempora nemo suscipit eaque neque.
-          </p>
+          <p>Tetons</p>
           <img
             loading="lazy"
-            src="./images/lazy/img2.jpg"
-            alt="An image of an a deer"
-            width="500"
+            src="./images/discover/discover-2.jpg"
+            alt="Iconic Teton Valley sign"
+            width="400"
             height="300"
           />
+          <p>Teton Valley sign</p>
           <img
             loading="lazy"
-            src="./images/lazy/img3.jpg"
-            alt="An image of an a cheetah"
-            width="500"
+            src="./images/discover/discover-3.jpg"
+            alt="Historic Haunted Mill"
+            width="400"
             height="300"
           />
+          <p>Haunted Mill</p>
           <img
             loading="lazy"
-            src="./images/lazy/img4.webp"
-            alt="An image of an a dog"
-            width="500"
+            src="./images/discover/discover-4.jpg"
+            alt="Breathtaking Yosemite National Park"
+            width="400"
             height="300"
           />
+          <p>Yosemite National Park</p>
           <img
             loading="lazy"
-            src="./images/lazy/img5.jpg"
-            alt="An image of an a cat"
-            width="500"
+            src="./images/discover/discover-5.jpg"
+            alt="Prestigious BYU-Idaho"
+            width="400"
             height="300"
           />
+          <p>BYU-Idaho</p>
           <img
             loading="lazy"
-            src="./images/lazy/img6.jpg"
-            alt="An image of an a elephant"
-            width="500"
+            src="./images/discover/discover-6.jpg"
+            alt="Scenic Table Rock hike"
+            width="400"
             height="300"
           />
+          <p>Table Rock hike</p>
         </div>
       </div>
     </main>
