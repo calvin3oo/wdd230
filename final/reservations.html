@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/vars.css">
+    <link rel="stylesheet" href="./styles/genarics.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+
+    <!-- Scripts -->
+  </head>
+  <body>
+    <header>
+      <h1>Scoots</h1>
+      <nav>
+        <div id="hamburger" class="mobile-show"></div>
+        <ul id="menu" class="style-none mobile-hidden nav-links"></ul>
+      </nav>
+      <script src="./scripts/menu.js" defer></script>
+      <!--Fills in Navbar-->
+    </header>
+    <main>
+      <div class="grid-2-col">
+        <form>
+          <h2>Rental Details</h2>
+          <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label for="period">Period:</label>
+            <select id="period" name="period">
+              <option value="full-day">Full Day</option>
+              <option value="half-day">Half Day</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="rental-type">Rental Type:</label>
+            <select id="rental-type" name="rental-type">
+              <option value="Honda Metropolitan (49cc)">
+                Honda Metropolitan (49cc)
+              </option>
+              <option value="Honda Dio (110cc)">Honda Dio (110cc)</option>
+              <option value="Honda PCX150 (149cc)">Honda PCX150 (149cc)</option>
+              <option value="Honda Pioneer 1000">Honda Pioneer 1000</option>
+              <option value="Jeep Wrangler - 4 door">
+                Jeep Wrangler - 4 door
+              </option>
+              <option value="Jeep Wrangler - 2 door">
+                Jeep Wrangler - 2 door
+              </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="number">Number of Rentals:</label>
+            <input type="number" id="number" name="number" min="1" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="state-country">Home State or Country:</label>
+            <input
+              type="text"
+              id="state-country"
+              name="state-country"
+              required
+            >
+          </div>
+          <div class="form-group">
+            <label for="cruise-line">Cruise Line (if applicable):</label>
+            <input type="text" id="cruise-line" name="cruise-line">
+          </div>
+          <div class="form-group">
+            <label for="accommodations">Special Accommodations/Comments:</label>
+            <textarea id="accommodations" name="accommodations"></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+
+        <div class="agreement">
+          <h2>Rental Agreement</h2>
+          <p class="bold">Types of Rentals</p>
+          <ul>
+            <li>
+              Honda Motor Scooters
+              <ul class="pl-1">
+                <li>Honda Metropolitan (49cc) - 1 person</li>
+                <li>Honda Dio (110cc) - 2 person</li>
+                <li>Honda PCX150 (149cc) - 2 person</li>
+              </ul>
+            </li>
+            <li>
+              Side-by-Side ATVs
+              <ul class="pl-1">
+                <li>Honda Pioneer 1000 - 4 person</li>
+              </ul>
+            </li>
+            <li>
+              Jeeps
+              <ul class="pl-1">
+                <li>Jeep Wrangler - 4 door manual with A/C - 5 person</li>
+                <li>Jeep Wrangler - 2 door - open air - manual - 4 person</li>
+              </ul>
+            </li>
+          </ul>
+
+          <p class="pt-1 bold">Rental Services and Agreements</p>
+          <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>
+              A valid driver's license is required in hand at the time of
+              rental.
+            </li>
+            <li>
+              No one under the age of 12 years of age is allowed to ride on the
+              scooters.
+            </li>
+            <li>Fuel charge is not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is included.</li>
+            <li>Damage insurance is available for purchase.</li>
+            <li>
+              Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.
+            </li>
+            <li>
+              Payment via Google Pay, Apple Pay, cash, credit card, debit card,
+              or Venmo.
+            </li>
+            <li>Rentals may be returned to either physical location.</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="contact-info">
+        <p>Email: info@scoots.com</p>
+        <p>Phone: 123-456-7890</p>
+      </div>
+      <div class="pt-1 social-media">
+        <a href="https://www.facebook.com"
+          ><img
+            src="./media/facebook.png"
+            alt="Facebook"
+            width="64"
+            height="64"
+        ></a>
+        <a href="https://www.x.com"
+          ><img src="./media/x.png" alt="X" width="64" height="64"
+        ></a>
+        <a href="https://www.instagram.com"
+          ><img
+            src="./media/instagram.png"
+            alt="Instagram"
+            width="64"
+            height="64"
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

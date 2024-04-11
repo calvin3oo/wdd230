@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/vars.css">
+  <link rel="stylesheet" href="./styles/genarics.css">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/medium.css">
+  <link rel="stylesheet" href="./styles/larger.css">
+
+</head>
+<body>
+  <header>
+    <h1>Scoots</h1>
+    <nav>
+      <div id="hamburger" class="mobile-show"></div>
+      <ul id="menu" class="style-none mobile-hidden nav-links"></ul>
+    </nav>
+    <script src="./scripts/menu.js" defer></script> <!--Fills in Navbar-->
+  </header>
+  <main>
+    <section class="flex-col-center">
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: info@scoots.com</p>
+        <p>Phone: 123-456-7890</p>
+      </div>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form class="border">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="comment">Comment:</label>
+          <textarea class="mb-2" id="comment" name="comment" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119641.6660503827!2d-86.95665368776352!3d20.432225033423897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1712811978885!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="contact-info">
+      <p>Email: info@scoots.com</p>
+      <p>Phone: 123-456-7890</p>
+    </div>
+    <div class="pt-1 social-media">
+      <a href="https://www.facebook.com"><img src="./media/facebook.png" alt="Facebook" width="64" height="64"></a>
+      <a href="https://www.x.com"><img src="./media/x.png" alt="X" width="64" height="64"></a>
+      <a href="https://www.instagram.com"><img src="./media/instagram.png" alt="Instagram" width="64" height="64"></a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -13,10 +13,14 @@
   <link rel="stylesheet" href="./styles/medium.css">
   <link rel="stylesheet" href="./styles/larger.css">
 
+  <!-- Scripts -->
+  <script src="./scripts/weather.js" defer></script> <!--Fills in Weather-->
+  <script src="./scripts/banner.js" defer></script> <!--Fills in Banner-->
+
 </head>
 <body>
   <header>
-    <h1></h1>
+    <h1>Scoots</h1>
     <nav>
       <div id="hamburger" class="mobile-show"></div>
       <ul id="menu" class="style-none mobile-hidden nav-links"></ul>
@@ -24,21 +28,39 @@
     <script src="./scripts/menu.js" defer></script> <!--Fills in Navbar-->
   </header>
   <main>
-    <a href="./reservations.html"><button id="call-to-action">Make a Reservation</button></a>
+    <div id="banner-container" hidden>
+      <div id="banner-close">❌</div>
+      <p id="banner-text"><span id="max-temp"></span></p>
+    </div>
+
+    <div class="hero">
+      <img id="hero-img" src="./media/hero.webp" alt="A mountain range" >
+      <a id="hero-join-link" href="./reservations.html" style="display: inline-block;">
+        <button>Make a Reservation</button>
+      </a>
+    </div>
+
     <div class="card">
       <h2>Rental Overview</h2>
-      <p>Rent various vehicles including Honda scooters, Side-by-Side ATVs, and Jeep Wranglers. $50 deposit, valid license required. Scooters for ages 12+, fuel not included, unlimited mileage. Liability insurance included, damage insurance optional. Free delivery for 2+ day rentals to Cozumel hotels or Airbnbs. Payment via multiple methods, returns accepted at either location.</p>
-      <a href="./rentals.html">More information here</a>
+      <div class="p-1">
+        <p>Rent various vehicles including Honda scooters, Side-by-Side ATVs, and Jeep Wranglers. $50 deposit, valid license required. Scooters for ages 12+, fuel not included, unlimited mileage. Liability insurance included, damage insurance optional. Free delivery for 2+ day rentals to Cozumel hotels or Airbnbs. Payment via multiple methods, returns accepted at either location.</p>
+        <a href="./rentals.html">More information here</a>
+      </div>
     </div>
     <div class="card">
-      <!-- TODO: 
-      Weather information from the free version of openweathermap.org. Here is the minimum information to include on the page:
-✔️ The current temperature
-✔️ The current humidity
-✔️ The next day's forecasted temperature at 15:00 (3:00pm).
-✔️ All the weather data points provided including the main (which is the title, e.g., "Clouds"), the description, and the associated weather icon.
-There may likely only be one data point under weather but your code should display any and all if provided by the API.
-Include a closeable message at the very top of the page that provides the high temperature temp-max for the current day. -->
+      <h1>Weather</h1>
+      <div class="container text-center">
+        <div class="container">
+          <h4>Current Weather</h4>
+          <p><span id="weather-cont"></span></p>
+        </div>
+        <div class="container">
+          <h4>Tomorrow</h4>
+          <div class="flex-row-center" id="tomorrow">
+            <!-- filled in by JavaScript -->
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <footer>
@@ -46,10 +68,10 @@ Include a closeable message at the very top of the page that provides the high t
       <p>Email: info@scoots.com</p>
       <p>Phone: 123-456-7890</p>
     </div>
-    <div class="social-media">
-      <a href="https://www.facebook.com"><img src="./media/facebook.png" alt="Facebook" width="64px" height="64px"></a>
-      <a href="https://www.x.com"><img src="./media/x.png" alt="X" width="64px" height="64px"></a>
-      <a href="https://www.instagram.com"><img src="./media/instagram.png" alt="Instagram" width="64px" height="64px"></a>
+    <div class="pt-1 social-media">
+      <a href="https://www.facebook.com"><img src="./media/facebook.png" alt="Facebook" width="64" height="64"></a>
+      <a href="https://www.x.com"><img src="./media/x.png" alt="X" width="64" height="64"></a>
+      <a href="https://www.instagram.com"><img src="./media/instagram.png" alt="Instagram" width="64" height="64"></a>
     </div>
   </footer>
 </body>

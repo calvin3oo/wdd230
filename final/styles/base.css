@@ -101,8 +101,8 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: var(--white-smoke);
-  color: var(--raisin-black);
+  background-color: var(--back-light);
+  color: var(--text-dark);
 }
 
 * {
@@ -116,7 +116,7 @@ body {
 }
 
 a {
-  color: var(--link-color);
+  color: rgb(0, 112, 187);
   text-decoration: none;
 }
 
@@ -180,35 +180,35 @@ li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: var(--raisin-black);
+  background-color: var(--back-dark);
   padding: 0.5rem;
 }
 .nav-links a {
-  color: var(--white-smoke);
+  color: var(--back-light);
 }
 .card {
-  background-color: var(--white-smoke);
+  background-color: var(--back-light);
   border-radius: 0.5rem;
   overflow: hidden;
-  border: 1px solid var(--raisin-black);
+  border: 1px solid var(--back-dark);
   margin: 0.5rem 0;
 }
 .card > :first-child {
   width: 100%;
   text-align: center;
-  background-color: var(--raisin-black);
+  background-color: var(--back-dark);
   padding: 0.5rem;
-  color: var(--white-smoke);
+  color: var(--back-light);
 }
 .card.member > :not(:first-child) {
   margin: 0.5rem;
   max-width: 400px;
 }
 .gold {
-  background-color: var(--gold-metallic);
+  background-color: var(--secondary);
 }
 .dark {
-  background-color: var(--raisin-black);
+  background-color: var(--back-dark);
 }
 .rounded {
   border-radius: 0.5rem;
@@ -234,7 +234,7 @@ li {
 
 #hamburger.open::before {
   content: "×";
-  color: var(--white-smoke);
+  color: var(--back-light);
 }
 .active::before {
   content: "📌";
@@ -362,33 +362,33 @@ img {
   margin: 0 auto;
 }
 #viewToggle {
-  color: var(--raisin-black);
-  background-color: var(--gold-metallic);
+  color: var(--back-dark);
+  background-color: var(--secondary);
   border-radius: 1rem;
   padding: 0.5rem;
   cursor: pointer;
   margin: 1rem auto;
 }
 #viewToggle:hover {
-  color: var(--gold-metallic);
-  background-color: var(--raisin-black);
+  color: var(--secondary);
+  background-color: var(--back-dark);
 }
-.main-form {
+form {
   display: flex;
   margin: 1em auto 0 auto;
-  max-width: 500px;
+  max-width: 1000px;
   flex-direction: column;
   justify-content: center;
-  color: var(--raisin-black);
+  color: var(--back-dark);
   text-align: center;
 }
 .main-form-container {
   min-width: 300px;
-  max-width: max(300px, 45%);
+  max-width: max(800px, 45%);
 }
 .membership-information-container {
   min-width: 300px;
-  max-width: max(300px, 45%);
+  max-width: max(1000px, 45%);
 }
 .form-group {
   margin-bottom: 20px;
@@ -397,11 +397,11 @@ img {
   display: block;
   margin-bottom: 5px;
 }
-.main-form button[type="submit"] {
+form button[type="submit"] {
   padding: 10px 20px;
-  background-color: var(--gold-metallic);
-  color: var(--raisin-black);
-  border: 2px solid var(--gold-metallic);
+  background-color: var(--secondary);
+  color: var(--text-light);
+  border: 2px solid var(--secondary);
   cursor: pointer;
   border-radius: 1rem;
   min-width: 200px;
@@ -409,8 +409,8 @@ img {
   margin-bottom: 1rem;
 }
 .main-form button[type="submit"]:hover {
-  background-color: var(--raisin-black);
-  color: var(--gold-metallic);
+  background-color: var(--back-dark);
+  color: var(--secondary);
 }
 
 .container {
@@ -422,11 +422,11 @@ img {
   margin-left: 1rem;
 }
 .text-light {
-  color: var(--white-smoke);
+  color: var(--back-light);
 }
 #threeDayForecast {
-  color: var(--raisin-black);
-  background-color: var(--gold-metallic);
+  color: var(--back-dark);
+  background-color: var(--secondary);
   border-radius: 1rem;
   padding: 1rem;
   max-width: 350px;
@@ -435,12 +435,12 @@ img {
 }
 
 #banner-container {
-  background-color: var(--gold-metallic);
-  color: var(--raisin-black);
+  background-color: var(--secondary);
+  color: var(--text-light);
   padding: 0.5rem;
   margin: 0.5rem auto;
   border-radius: 0.25rem;
-  width: max(300px, 80%);
+  width: 90%;
   position: relative;
   right: 10px;
 }
@@ -452,16 +452,16 @@ img {
   display: block;
 }
 #hero-join-link button {
-  background-color: var(--gold-metallic);
-  color: var(--raisin-black);
-  border: 2px solid var(--gold-metallic);
+  background-color: var(--secondary);
+  color: var(--text-light);
+  border: 2px solid var(--secondary);
   border-radius: 1rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
 #hero-join-link button:hover {
-  background-color: var(--raisin-black);
-  color: var(--gold-metallic);
+  background-color: var(--text-light);
+  color: var(--secondary);
 }
 #hero-join-link {
   position: relative;
@@ -473,4 +473,69 @@ img {
 }
 .hero {
   margin-bottom: -3rem;
+}
+.secondary{
+  background-color: var(--secondary);
+  color: var(--back-dark);
+}
+.secondary{
+  background-color: var(--secondary);
+  color: var(--back-dark);
+}
+#hero-img{
+  border-radius: .5rem;
+}
+
+header {
+  background-color: var(--secondary);
+  color: var(--back-dark);
+  margin-bottom: 1rem;
+}
+header h1{
+  padding: .5rem;
+  color: var(--text-light)
+}
+footer {
+  background-color: var(--back-dark);
+  color: var(--back-light);
+  padding: 0.5rem;
+  text-align: center;
+}
+.rental-table td{
+  padding: .5rem;
+  border: 1px solid var(--back-dark);
+}
+.rental-table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.rental-table tr:first-of-type{
+  font-weight: bold;
+}
+
+.grid-2-col{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.bold{
+  font-weight: bold;
+}
+.border{
+  border: 1px solid var(--back-dark);
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+.map{
+  width: max(300px, min(100%, 1000px));
+  height: 450px;
+  margin-bottom: 1rem;
+}
+.map iframe{
+  width: 100%;
+  height: 100%;
+  border: none;
 }
